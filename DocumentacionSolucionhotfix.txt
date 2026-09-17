@@ -1,0 +1,9 @@
+=============================================
+ DOCUMENTACIÓN DE PARCHE URGENTE (HOTFIX)
+=============================================
+Fecha: 17/09/2026
+Autor: gcetino1-a11y
+
+Detalle del Hotfix:
+- Corrección inmediata aplicada directamente para resolver un error crítico.
+- Estado: Resuelto y verificado.
