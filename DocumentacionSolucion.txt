@@ -1,0 +1,35 @@
+Guía de Ejercicio: Ramas en GitHub
+Documentación de comandos y procedimiento paso a paso | Programación II
+1. Información General del Proyecto
+• Usuario de GitHub: gcetino1-a11y
+• Nombre del Repositorio: Ejercicios_progra2
+• Ruta Local en Windows: C:\Ejercicios_prograII
+Parte 1: Creación y Sincronización de Ramas Remotas
+A continuación se detalla la secuencia de comandos para crear y sincronizar las ramas requeridas (feature/, bugfix/, hotfix/) en el repositorio remoto de GitHub:
+Paso 1.1: Navegar a la carpeta local e inicializar Git
+cd /c/Ejercicios_prograII
+git init
+git remote add origin https://github.com/gcetino1-a11y/Ejercicios_progra2.git
+git fetch origin
+Paso 1.2: Crear y publicar la rama 'feature/'
+Se utiliza el comando git checkout -b para crear la rama localmente y luego git push para sincronizarla con el servidor remoto:
+git checkout -b feature/
+git push -u origin feature/
+Paso 1.3: Crear y publicar la rama 'bugfix/'
+git checkout -b bugfix/
+git push -u origin bugfix/
+Paso 1.4: Crear y publicar la rama 'hotfix/'
+git checkout -b hotfix/
+git push -u origin hotfix/
+Parte 2: Creación y Publicación de Archivo en la Rama feature/
+En esta sección se documenta la creación del archivo README.md dentro de la rama feature/, su posterior confirmación (commit) y publicación en GitHub:
+Paso 2.1: Posicionarse en la rama 'feature/'
+git checkout feature/
+Paso 2.2: Crear el archivo README.md
+echo "# Documentación del Proyecto - Ejercicios Progra II" > README.md
+Paso 2.3: Añadir, confirmar y publicar los cambios
+git add README.md
+git commit -m "Add README.md file in feature branch"
+git push origin feature/
+Resumen de Comandos Utilizados
+Comando GitDescripción / Propósitogit checkout -b <nombre_rama>Crea una nueva rama local y cambia inmediatamente a ella.git push -u origin <nombre_rama>Publica la rama local en el repositorio remoto y establece el rastreo.git add <archivo>Añade el archivo al área de preparación (staging area).git commit -m "mensaje"Guarda los cambios preparados con un mensaje descriptivo.git push origin <nombre_rama>Sube los commits locales a la rama especificada en el remoto.
